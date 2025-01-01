@@ -23,7 +23,7 @@ jobs:
 
       - name: Run leaderboard scraper
         run: |
-          python leaderboard_scrapper.py
+          python my_scrapper/leaderboard_scrapper.py
 
       - name: Commit and push changes
         run: |
