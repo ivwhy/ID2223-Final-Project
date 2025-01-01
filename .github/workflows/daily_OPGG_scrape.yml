@@ -29,7 +29,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add ID2223-Final-Project/my_scrapper/leaderboard_data.csv
+          git add ID2223-Final-Project/my_scrapper/*
           git commit -m "Daily leaderboard scrape" || echo "No changes to commit"
           git push
         env:
