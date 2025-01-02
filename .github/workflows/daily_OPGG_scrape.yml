@@ -2,9 +2,7 @@ name: Daily Leaderboard Scraper
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
-    #'/5 0 * * *' # Runs daily at midnight UTC    
-    #	*/5 * * * * <command to execute> # run every 5 min
+    - cron: "*/5 * * * *"  #'/5 0 * * *' # Runs daily at midnight UTC    
 
 jobs:
   scrape_leaderboard:
