@@ -20,11 +20,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install selenium webdriver_manager
-          
-      - name: List files
-        run: |
-          cd ID2223-Final-Project/my_scrapper/
-          ls
 
       - name: Run leaderboard scraper
         run: |
