@@ -22,7 +22,9 @@ jobs:
           pip install selenium webdriver_manager
           
       - name: List files
-        run: ls -R ID2223-Final-Project/my_scrapper/
+        run: |
+          cd ID2223-Final-Project/my_scrapper/
+          ls
 
       - name: Run leaderboard scraper
         run: |
