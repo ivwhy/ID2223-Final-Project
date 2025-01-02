@@ -20,6 +20,9 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install selenium webdriver_manager
+          
+      - name: List files
+        run: ls -R ID2223-Final-Project/my_scrapper/
 
       - name: Run leaderboard scraper
         run: |
@@ -29,7 +32,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add ID2223-Final-Project/my_scrapper/*
+          git add ID2223-Final-Project/my_scrapper/leaderboard_data.csv
           git commit -m "Daily leaderboard scrape" || echo "No changes to commit"
           git push
         env:
